@@ -4,20 +4,64 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Soho</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<header>
-			<h1>Soho</h1>
-			<nav></nav>
+		<header class="header">
+			<div class="wrap">
+				<button class="open_close" aria-label="Open and Close the Navigation">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</button>
+				<nav class="main_nav">
+					<ul class="main">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a class="current" href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<button class="search_icon" aria-label="Search the Site">
+					<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" /></svg>
+				</button>
+				<form class="search_bar">
+					<label for="search" class="screen-reader-text">Type Your Search</label>
+					<input id="search" type="search" placeholder="Search the site" />
+					<label for="submit" class="screen-reader-text">Submit</label>
+					<input id="submit" type="submit" value="Search" />
+				</form>
+			</div>
 		</header>
 
-		<main>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis suscipit numquam accusamus, ad delectus enim non quibusdam et iure eius assumenda, consequatur eligendi quam est molestias dignissimos sit nulla excepturi!</p>
+		<main class="main">
+			<section class="banner">
+				<div class="h1_wrap">
+					<h1 class="block_header">Soho</h1>
+				</div>
+
+				<!-- Intentionally leaving banner image alt as null value; screen readers will skip. -->
+				<figure class="bg_image"><img src="https://picsum.photos/1920/1080" alt="" /></figure>
+			</section>
+
+			<section class="block_body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus id nisi eum quae architecto quia esse nemo omnis, <a href="#">soluta necessitatibus veniam</a> porro ad recusandae animi est consequatur ducimus repellendus.</p>
+
+				<form>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, deleniti quis architecto, natus voluptates expedita dignissimos ad eos placeat, omnis commodi eius incidunt amet odit enim dolorum nisi est quo.</form>
+			</section>
+
+			<aside class="sidebar">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maiores ad labore fugit rem praesentium voluptas reiciendis tempore expedita? Accusantium asperiores ratione adipisci sequi laboriosam quaerat dolores accusamus reiciendis non!</p>
+			</aside>
 		</main>
 
 		<footer>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi non ipsum aliquam accusamus ducimus possimus, reiciendis quo blanditiis qui nobis pariatur omnis ullam neque voluptatibus, tenetur, expedita voluptatem dolorum.</p>
+			<p>Copyright &copy; <span id="copy"></span></p>
 		</footer>
 		<script src="scripts/scripts.js"></script>
 	</body>

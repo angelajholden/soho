@@ -1,0 +1,85 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $mukta;
+	font-size: 100%;
+	font-weight: 400;
+	line-height: 1.75;
+	color: $black;
+	background-color: $white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+}
+
+a {
+	color: $blue;
+
+	&:hover,
+	&:active {
+		color: $blue;
+	}
+}
+
+// Hero
+.banner {
+	position: relative;
+	width: 100%;
+	height: 450px;
+
+	.h1_wrap {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		background-color: rgba($white, 0.85);
+		padding: 1rem 2rem;
+		width: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	.block_header {
+		margin: 0;
+		font-size: 6rem;
+		font-weight: 300;
+		line-height: 1;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.bg_image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		z-index: -1;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
