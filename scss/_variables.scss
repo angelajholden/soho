@@ -1,9 +1,28 @@
 $white: #fff;
 $black: #222;
 $gray: #eaeaea;
+$dark-gray: #8a8888;
 $gold: #c0945c;
 $blue: #1a73e8;
 
 $mukta: "Mukta", sans-serif;
+
+@mixin button {
+	appearance: none;
+	border: 2px solid $gold;
+	background-color: transparent;
+	color: $gold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	cursor: pointer;
+	transition: all 300ms ease;
+
+	&:hover,
+	&:active {
+		background-color: $gold;
+		color: $white;
+	}
+}
 
 // sass --watch scss/styles.scss:styles.css --style compressed

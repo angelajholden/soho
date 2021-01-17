@@ -37,9 +37,6 @@
 					<input id="submit" type="submit" value="Search" />
 				</form>
 			</div>
-		</header>
-
-		<main class="main">
 			<section class="banner">
 				<div class="h1_wrap">
 					<h1 class="block_header">Soho</h1>
@@ -48,20 +45,48 @@
 				<!-- Intentionally leaving banner image alt as null value; screen readers will skip. -->
 				<figure class="bg_image"><img src="https://picsum.photos/1920/1080" alt="" /></figure>
 			</section>
+		</header>
 
-			<section class="block_body">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus id nisi eum quae architecto quia esse nemo omnis, <a href="#">soluta necessitatibus veniam</a> porro ad recusandae animi est consequatur ducimus repellendus.</p>
+		<main class="main">
+			<div class="wrap">
+				<section class="block_body">
+					<h2 class="block_title">Contact</h2>
 
-				<form>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, deleniti quis architecto, natus voluptates expedita dignissimos ad eos placeat, omnis commodi eius incidunt amet odit enim dolorum nisi est quo.</form>
-			</section>
+					<figure class="block_img"><img src="https://picsum.photos/1024/768" alt="placeholder" /></figure>
 
-			<aside class="sidebar">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maiores ad labore fugit rem praesentium voluptas reiciendis tempore expedita? Accusantium asperiores ratione adipisci sequi laboriosam quaerat dolores accusamus reiciendis non!</p>
-			</aside>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus id nisi eum quae architecto quia esse nemo omnis, <a href="#">soluta necessitatibus veniam</a> porro ad recusandae animi est consequatur ducimus repellendus.</p>
+
+					<form class="form">
+						<div class="form_wrap">
+							<label class="screen-reader-text" for="name">Name</label>
+							<input id="name" type="text" placeholder="Name" required />
+
+							<label class="screen-reader-text" for="email">Email</label>
+							<input id="email" type="email" placeholder="Email" required />
+
+							<label class="screen-reader-text" for="website">Website</label>
+							<input id="website" type="url" placeholder="Website" required />
+						</div>
+						<label class="screen-reader-text" for="message">Message</label>
+						<textarea id="message" name="textarea" placeholder="Message" cols="30" rows="10"></textarea>
+
+						<label class="screen-reader-text" for="submit">Submit</label>
+						<input id="submit" type="submit" value="Send" />
+					</form>
+				</section>
+
+				<aside class="block_sidebar">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maiores ad labore fugit rem praesentium voluptas reiciendis tempore expedita? Accusantium asperiores ratione adipisci sequi laboriosam quaerat dolores accusamus reiciendis non!</p>
+				</aside>
+			</div>
 		</main>
 
-		<footer>
-			<p>Copyright &copy; <span id="copy"></span></p>
+		<footer class="footer">
+			<div class="wrap">
+				<p>&copy; <span id="copy"></span> Soho. All Rights Reserved.</p>
+				<p>Soho</p>
+				<p>Made with Love by Angela</p>
+			</div>
 		</footer>
 		<script src="scripts/scripts.js"></script>
 	</body>

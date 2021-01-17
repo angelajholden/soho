@@ -41,45 +41,59 @@ a {
 	}
 }
 
-// Hero
-.banner {
-	position: relative;
-	width: 100%;
-	height: 450px;
+// Main Body
+.main {
+	padding: 50px 10px;
 
-	.h1_wrap {
-		position: relative;
-		top: 50%;
-		left: 50%;
-		display: inline-block;
-		background-color: rgba($white, 0.85);
-		padding: 1rem 2rem;
-		width: auto;
-		transform: translate(-50%, -50%);
+	.wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-flow: row nowrap;
 	}
 
-	.block_header {
-		margin: 0;
-		font-size: 6rem;
+	.block_body {
+		width: 66.666%;
+		padding-right: 2rem;
+		border-right: 1px solid $gray;
+	}
+
+	.block_sidebar {
+		width: 33.333%;
+		padding-left: 2rem;
+	}
+}
+
+// Block body
+.block_body {
+	.block_title {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		display: inline-block;
+		width: auto;
+		margin: 0 auto 2rem;
+		padding: 5px 15px;
+		border-bottom: 1px solid $black;
+		color: $black;
 		font-weight: 300;
-		line-height: 1;
 		text-transform: uppercase;
 		text-align: center;
+		letter-spacing: 2px;
 	}
 
-	.bg_image {
-		position: absolute;
-		top: 0;
-		left: 0;
+	.block_img {
+		margin: 0 0 2rem;
 		width: 100%;
-		height: 100%;
-		margin: 0;
-		z-index: -1;
+		height: 400px;
 
 		img {
-			object-fit: cover;
+			display: block;
 			width: 100%;
 			height: 100%;
+			object-fit: cover;
 		}
 	}
 }
